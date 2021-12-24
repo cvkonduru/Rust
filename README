@@ -1,0 +1,48 @@
+How to install rust :
+
+rustup.rs
+
+How to update Rust:
+
+rustup update
+
+Manage Projects with Cargo.
+
+Rust ships with a tool names Cargo that assists with your day-to-day interactions with the lanaguage.
+Cargo handles everything from making projects to fetching packagess of pre-made code.
+It can run your programs and call other tools to fix your code formatting and find common errors.
+Cargo is a Swiss Army Knife -- it has a tool for everything.
+
+How to setup a new project with Cargo:
+
+Open a terminal/command prompt
+Navigate to the home directory you selected for your Rust code.
+Don't create a new subdirectory for your project -- Cargo will do that for you.
+Type cargo new[project name].
+Rust has created a subdirectory names[project name]. Enter it with cd[project name].
+
+Cargo baiscally creates a ew git repo for your program. if you don't want git then issues
+
+cargo new --vcs=none [project name]
+
+clippy is a tool to analyze the code and provide us with warning and issues.
+
+If we have to make clippy more strict 
+`#![warn(clippy::all, clippy::pedantic)]`
+
+
+Package Management with code :
+
+Cargo can install dependencies for you. There's an ever-growing number of crates (Rust's name for packages) available for free on the crates.io system.
+Cargo makes it easy to install and use these crates, as well as to publish your own.
+
+use cargo search[search term] or visit crates website 
+
+Once we find the needed crate we can add it to dependencies in Cargo.toml file.
+
+Dependencies can be removed from your project  by deleting them from cargo.toml file and then do a cargo clean command.
+
+
+
+
+
